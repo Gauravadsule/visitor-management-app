@@ -1,4 +1,4 @@
-from flask import Flask,Blueprint, render_template_string, request
+from flask import Flask,Blueprint, app, render_template_string, request
 from db import get_db_connection 
 
 # app = Flask(__name__)

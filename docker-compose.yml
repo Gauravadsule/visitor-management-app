@@ -22,8 +22,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: visitors_db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: rootpassword
     volumes:
       - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:

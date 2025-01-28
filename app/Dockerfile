@@ -5,7 +5,7 @@ FROM python:3.13.1-slim
 WORKDIR /app
 
 # Install the required dependencies directly
-RUN pip install --no-cache-dir Flask==2.2.2 mysql-connector-python==8.0.28
+RUN pip install --no-cache-dir Flask==2.2.2 mysql-connector-python==8.0.28 werkzeug==2.2.2
 
 # Copy the application code into the container
 COPY . /app/
